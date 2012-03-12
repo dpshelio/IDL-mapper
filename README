@@ -1,0 +1,20 @@
+IDL-mapper creates a graphivz representation of your IDL libraries
+
+To run it you just need to have:
+  * a linux bash (I've not tested in others yet)
+  * python2
+  * graphivz
+  * pygraphivz (http://networkx.lanl.gov/pygraphviz/)
+
+Then execute: 
+
+  $ ./find_roots.sh IDL_test_lib  
+
+where IDL_test_lib is the example library on the repository, but you can change it to the path of the library you want to plot.
+
+Attention: depending on the library size it can take quite a while, and the plot may not be generated properly (and can get a few MBs).
+
+For visualisation you can use any of the tools in:
+http://www.graphviz.org/Resources.php
+
+ZGRViewer works quite well for me (http://zvtm.sourceforge.net/zgrviewer.html)
