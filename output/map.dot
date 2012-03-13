@@ -1,0 +1,10 @@
+strict digraph  {
+	WeightInPlanet	 [color=red];
+	planetprop	 [color=green];
+	WeightInPlanet -> planetprop	 [color=blue];
+	calculate_g	 [color=green];
+	WeightInPlanet -> calculate_g	 [color=blue];
+	isstruct	 [color=green];
+	calculate_g -> isstruct	 [color=blue];
+	calculate_g -> planetprop	 [color=blue];
+}
