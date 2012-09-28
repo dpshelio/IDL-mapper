@@ -34,7 +34,7 @@ grep ":function:" file_funct | awk -F ":" 'BEGIN { format = "\"%s\","; printf "f
 
 ./find_edges.sh file_funct_list file_funct
 
-sed -e 's/\"\"/\"empty\"/g' py_var > py_var0
+sed -e 's/\"\"/\"empty\"/g' py_var | sed -e 's///g' > py_var0
 mv py_var0 py_var
 
 python2 create_map.py
