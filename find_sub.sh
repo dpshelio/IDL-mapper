@@ -12,7 +12,7 @@ for line in `sed 's/ //g' $filename`; do
 	ff=$funct"\("
     fi
     if [ "$fop" = "pro" ]; then
-	ff=`echo "^"$funct"[, ][^(_|*)]" | sed -e 's/ //'`
+	ff=`echo "^\s*"$funct"[, ][^(_|*)]" | sed -e 's/ //'`
     fi
     for file in `cat filelist`; do
         # third awk tries to find whether the 3rd column still exist 
